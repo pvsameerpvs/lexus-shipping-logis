@@ -22,15 +22,15 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #001973; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0d42ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #3b82f6; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.6);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color:#0e1d34;  /* The default color of the main navmenu links */
+  --nav-hover-color: #3b82f6; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -45,9 +45,9 @@
 }
 
 .dark-background {
-  --background-color: #0e1d34;
+  --background-color: #19335c;
   --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --heading-color: #0e1d34;
   --surface-color: #19335c;
   --contrast-color: #ffffff;
 }
@@ -85,6 +85,24 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
+}
+
+.font-white{
+  color: #f4f4f4 !important;
+  font-weight: 700;
+}
+
+.fs-10{
+ font-size: 17px !important; 
+ font-weight: 400 !important;
+}
+
+.strock{
+   -webkit-text-stroke: .5px #19335c; 
+   color: var(--heading-color);
+}
+.font-white-main{
+  color: #f4f4f4 !important;
 }
 
 /* Pulsating Play Button
@@ -223,7 +241,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   --background-color: rgba(255, 255, 255, 0);
-  --heading-color: #ffffff;
+  --heading-color:#0e1d34;;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
@@ -283,14 +301,14 @@ h6 {
 }
 
 .scrolled .header {
-  padding: 10px 0;
+  padding: 20px 0;
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(14, 29, 52, 0.9);
+  --background-color: rgba(255, 255, 255, 0.9);
 }
 
 /*--------------------------------------------------------------
@@ -346,6 +364,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
+    font-weight: 900;
   }
 
   .navmenu .dropdown ul {
@@ -554,7 +573,7 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 50px;
   margin-right: 6px;
 }
 
@@ -862,7 +881,7 @@ h6 {
 }
 
 .message.bot {
-  background-color: #007bff;
+  background-color: #3b82f6;;
   color: white;
   align-self: flex-start;
 }
@@ -1012,7 +1031,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 50vh;
+  min-height: 75vh;
   position: relative;
   padding: 120px 0 60px 0;
 }
@@ -1026,6 +1045,7 @@ section,
   object-fit: cover;
   z-index: 1;
 }
+
 
 .hero .container {
   position: relative;
